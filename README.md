@@ -52,7 +52,22 @@ Mapa de calor de los 73 barrios de Valencia, coloreados por rentabilidad estimad
 
 ---
 
-## 🔧 Metodología y stack técnico
+## 📊 Dashboard ejecutivo en Power BI
+
+Para complementar el análisis técnico en Python, se construyó un dashboard ejecutivo en Power BI pensado para una audiencia no técnica (por ejemplo, una inmobiliaria) que necesita ver los resultados de un vistazo, sin abrir un notebook.
+
+![Dashboard Power BI](dashboard_powerbi_proyecto5.png)
+
+El dashboard incluye:
+- **Mapa coroplético interactivo** de los 73 barrios de Valencia, coloreado por rentabilidad (rojo = baja, verde = alta)
+- **3 tarjetas KPI**: rentabilidad media de Valencia (6,47%), barrio más rentable (Ciutat Fallera), barrio más caro (El Pla del Remei)
+- **Ranking Top 10** de barrios más rentables
+
+**Cómo se construyó:** Python hizo todo el trabajo analítico pesado (limpieza, spatial join, cálculo de rentabilidad, modelo de ML). Power BI solo consume el resultado ya procesado (exportado a CSV) y lo presenta en un formato ejecutivo — el modelo de Machine Learning no se re-entrena en Power BI, sería redundante e innecesario.
+
+---
+
+
 
 | Fase | Herramienta | Qué se hizo |
 |---|---|---|
@@ -63,8 +78,7 @@ Mapa de calor de los 73 barrios de Valencia, coloreados por rentabilidad estimad
 | Visualización | `matplotlib`, `seaborn` | Gráficos estáticos de hallazgos |
 | Mapa | `folium` | Mapa de calor interactivo (choropleth) con tooltips |
 | Publicación | GitHub Pages | Hosting del mapa interactivo |
-
-**Próxima fase:** dashboard ejecutivo en Power BI para presentación a inmobiliarias.
+| Dashboard ejecutivo | Power BI Desktop | Mapa coroplético, KPIs y ranking para audiencia no técnica |
 
 ---
 
