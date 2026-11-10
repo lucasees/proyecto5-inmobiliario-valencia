@@ -36,7 +36,7 @@ Usando un modelo de Machine Learning (LightGBM) entrenado sobre las característ
 
 El precio de compra usado en este proyecto es **dato real** (33.622 anuncios de Idealista, dataset académico [`idealista18`](https://github.com/paezha/idealista18)). El portal oficial de datos abiertos del Ayuntamiento de Valencia, que publica precios de alquiler por barrio, no estuvo accesible durante este análisis.
 
-Ante esa limitación, el alquiler se **estimó** aplicando el yield (rentabilidad) medio documentado para Valencia (~5,9% anual, fuentes públicas del sector inmobiliario), ajustado linealmente según el patrón de mercado conocido: los barrios más caros en compra tienden a tener yields más bajos, y los más económicos, yields más altos. El gráfico siguiente muestra esa relación:
+Ante esa limitación, el alquiler se **estimó** con un yield (rentabilidad) que va del **7,5% en el barrio más barato al 4,5% en el más caro**, interpolado linealmente según el precio de compra (media resultante: 6,47%). El rango se tomó como referencia a partir de la rentabilidad media publicada para Valencia (~5,9% anual, fuentes públicas del sector inmobiliario) y del patrón de mercado conocido: los barrios más caros en compra tienden a tener yields más bajos, y los más económicos, yields más altos. El gráfico siguiente muestra esa relación:
 
 ![Relación precio-rentabilidad](grafico2_precio_vs_rentabilidad.png)
 
