@@ -56,7 +56,7 @@ Mapa de calor de los 73 barrios de Valencia, coloreados por rentabilidad estimad
 
 Para complementar el análisis técnico en Python, se construyó un dashboard ejecutivo en Power BI pensado para una audiencia no técnica (por ejemplo, una inmobiliaria) que necesita ver los resultados de un vistazo, sin abrir un notebook.
 
-![Dashboard Power BI](dashboard_powerbi_proyecto5.png)
+![Dashboard Power BI](dashboard_powerbi_proyecto5_1.png)
 
 El dashboard incluye:
 - **Mapa coroplético interactivo** de los 73 barrios de Valencia, coloreado por rentabilidad (rojo = baja, verde = alta)
